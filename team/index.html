@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author"              content="shopipi">
+    <meta name="robots"              content="noindex,nofollow">
+    <meta http-equiv="pragma"        content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="profile-card.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../master.js"></script>
+    <script type="text/javascript" src="../mobile-nav.js"></script>
+    
+    <title>チーム紹介 | DX9チーム</title>
+      <link rel="canonical" href="https://ydagame.github.io/DX9-Team/team/"/>
+      <meta property="og:title"     content="チーム紹介 | DX9チーム"/>
+      <meta property="og:url"       content="https://ydagame.github.io/DX9-Team/team/"/>
+      <meta property="og:site_name" content="DX9チーム"/>
+      <meta property="og:type"      content="website"/>
+      <meta name="twitter:card"     content="summary_large_image"/>
+      <meta name="twitter:title"    content="チーム紹介 | DX9チーム"/>
+  </head>
+
+  <body>
+
+    <script type="text/javascript" src="../notsupport.js"></script>
+
+    <header></header>
+    <div class="big" href="../"></div>
+
+    <nav>
+      <ul>
+        <li class="tab">
+          <a href="../">作品紹介「KORO」</a>
+        </li>
+        <li class="current">
+          <a>チーム紹介</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-nav">
+      <i class="fas fa-bars"></i>
+      <p>MENU</p>
+    </div>
+    <div class="mobile-nav-menu">
+      <div class="moble-nav-inner">
+        <p><a href="../">作品紹介「KORO」</a></p>
+        <p><a>チーム紹介</a></p>
+      </div>
+    </div>
+
+    <h2 style="margin: 60px auto 20px auto;">メンバー(50音順)</h2>
+
+<style>
+  button:hover
+  {
+    cursor: pointer;
+  }
+</style>
+
+    <script src="profile-card.js"></script>
+    <script>
+      let kanai = new Profile("kanai");
+      kanai.set_name("金井 陽都", "かない はると");
+      kanai.set_avatarImg("kanai.png");
+      kanai.set_themeColor("dodgerblue");
+      kanai.add_socialLink(SocialLink.GITHUB, "//github.com/8610Kanai");
+      kanai.add_TANTOU("床や壁のCubeオブジェクト");
+      kanai.add_TANTOU("物理実装");
+      kanai.add_YOTEI("Stage（フィールド）<br>&nbsp; クラス作成");
+      kanai.create();
+    </script>
+    <script>
+      let kawasaki = new Profile("kawasaki");
+      kawasaki.set_name("川崎 翔一", "かわさき しょういち");
+      kawasaki.set_avatarImg("kawasaki.jpg");
+      kawasaki.set_themeColor("orange");
+      kawasaki.add_socialLink(SocialLink.GITHUB, "//github.com/shopipi");
+      kawasaki.add_TANTOU("GameObjectクラス");
+      kawasaki.add_TANTOU("UI");
+      kawasaki.add_YOTEI("セーブデータ実装");
+      kawasaki.create();
+    </script>
+    <script>
+      let kawana = new Profile("kawana");
+      kawana.set_name("川名 真翔", "かわな まなと");
+      kawana.set_avatarImg("kawana.jpg");
+      kawana.set_themeColor("purple");
+      kawana.add_socialLink(SocialLink.GITHUB, "//github.com/rivername");
+      kawana.add_TANTOU("Camera制御<br><br>");
+      kawana.add_YOTEI("サウンド");
+      kawana.create();
+    </script>
+    <script>
+      let mizuno = new Profile("mizuno");
+      mizuno.set_name("水野 凱琉", "みずの がりゅう");
+      mizuno.set_avatarImg("mizuno.jpg");
+      mizuno.set_themeColor("salmon");
+      mizuno.add_socialLink(SocialLink.GITHUB, "//github.com/guile292");
+      mizuno.add_TANTOU("転がる球体");
+      mizuno.add_TANTOU("物理実装");
+      mizuno.add_YOTEI("まだ実装できていない<br>&nbsp; 物理の実装");
+      mizuno.create();
+    </script>
+
+    <a href="https://ydagame.wixsite.com/presen-ydagame2021" class="back-top-top">
+      <i class="fas fa-arrow-left"></i>&nbsp;
+      ゲーム科TOPへ
+    </a>
+
+    <div class="moveToTop"></div>
+    <footer id="footer">&copy; 2021 DX9チーム</footer>
+  </body>
+</html>

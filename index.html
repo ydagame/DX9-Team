@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author"              content="shopipi">
+    <meta name="robots"              content="noindex,nofollow">
+    <meta http-equiv="pragma"        content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="master.js"></script>
+    <script type="text/javascript" src="mobile-nav.js"></script>
+
+    <title>作品紹介「KORO」 | DX9チーム</title>
+      <link rel="canonical" href="https://ydagame.github.io/DX9-Team/"/>
+      <meta property="og:title"     content="作品紹介「KORO」 | DX9チーム"/>
+      <meta property="og:url"       content="https://ydagame.github.io/DX9-Team/"/>
+      <meta property="og:site_name" content="DX9チーム"/>
+      <meta property="og:type"      content="website"/>
+      <meta name="twitter:card"     content="summary_large_image"/>
+      <meta name="twitter:title"    content="作品紹介「KORO」 | DX9チーム"/>
+  </head>
+
+  <body>
+
+    <script type="text/javascript" src="notsupport.js"></script>
+
+    <header></header>
+
+    <div class="big"></div>
+
+    <nav>
+      <ul>
+        <li class="current">
+          <a>作品紹介「KORO」</a>
+        </li>
+        <li class="tab">
+          <a href="/team/">チーム紹介</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-nav">
+      <i class="fas fa-bars"></i>
+      <p>MENU</p>
+    </div>
+    <div class="mobile-nav-menu">
+      <div class="moble-nav-inner">
+        <p><a>作品紹介「KORO」</a></p>
+        <p><a href="/team/">チーム紹介</a></p>
+      </div>
+    </div>
+
+    </script>
+    
+<style>
+:root
+{
+  --img-width: calc(1280px / 3);
+  --img-height: calc(720px / 2.8);
+  --h1-color: dodgerblue;
+}
+.wrapper
+{
+  /* width: 900px; */
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+}
+.koro-logo
+{
+  background: url(KORO-logo-1280.png);
+  background-repeat: no-repeat;
+  width: var(--img-width);
+  height: var(--img-height);
+  background-size: var(--img-width);
+}
+.game-image
+{
+  background: url('完成予想図.png');
+  background-repeat: no-repeat;
+  width: var(--img-width);
+  height: var(--img-height);
+  background-size: var(--img-width);
+}
+.wrapper .kome
+{
+  position: absolute;
+  margin-left: 320px;
+  margin-top: 180px;
+  font-size: 16px;
+}
+.wrapper .summary
+{
+  display: flex;
+}
+.wrapper .text
+{
+  margin: 0 auto 0 50px;
+}
+.wrapper h1
+{
+  font-size: 23px !important;
+  color: var(--h1-color);
+  font-weight: bold;
+  margin-top: 50px;
+}
+.wrapper h2
+{
+  font-size: 18px !important;
+  margin-left: 32px;
+}
+.wrapper i
+{
+  color: var(--h1-color);
+  font-size: 23px;
+}
+.wrapper .description
+{
+  display: flex;
+}
+.wrapper .arrow
+{
+  font-size: 18px;
+  color: black;
+}
+.wrapper iframe
+{
+  display: block;
+  margin: 0 auto 20px;
+  width: 720px;
+  height: 405px;
+}
+.wrapper .video h1
+{
+  margin: 20px auto 20px auto;
+  text-align: center;
+  font-weight: bold !important;
+  color: red;
+  font-size: 32px !important;
+}
+@media screen and (max-width: 480px)
+{
+  .wrapper .summary
+  {
+    flex-direction: column;
+  }
+  .koro-logo, .game-image
+  {
+    width: 100vw !important;
+    background-size: 100vw !important;
+    height: 60vw;
+  }
+  .description
+  {
+    flex-direction: column;
+  }
+  .wrapper .inner, .wrapper .summary, .wrapper .description
+  {
+    width: 100vw !important;
+    background-size: 100vw !important;
+  }
+  .wrapper .text
+  {
+    margin: 0 10px 0 20px;
+  }
+  .wrapper iframe
+  {
+    width: 90vw;
+    height: 50vw;
+  }
+}
+</style>
+
+    <div class="wrapper">
+      <div class="summary">
+        <div class="inner">
+          <div class="koro-logo">
+            <!-- <p class="kome">※ KORO</p> -->
+          </div>
+          <div class="game-image"></div>
+        </div>
+        <div class="text">
+          <h1><i class="fas fa-gamepad"></i> ゲーム概要</h1>
+          <h2>ステージを傾けてボールを転がし、<br>迷路から脱出するゲームです</h2>
+          <h1><i class="fas fa-pencil-ruler"></i> ゲームルール</h1>
+          <h2>ステージを傾けてボールを転がし<br>制限時間以内にゴールを目指す</h2>
+          <h1><i class="far fa-keyboard"></i> 操作説明</h1>
+          <div class="description">
+            <h2>&bull; ステージを傾ける
+              <br>　&bull; W：奥
+              <br>　&bull; S：手前
+              <br>　&bull; D：右
+              <br>　&bull; A：左
+            </h2>
+            <h2>&bull; ステージを回転させる
+              <br>　&bull; <i class="arrow fas fa-arrow-right"></i>キー：時計回り
+              <br>　&bull; <i class="arrow fas fa-arrow-left"></i>キー：反時計回り
+            </h2>
+          </div>
+          <h2>&bull; ズーム
+            <br>　&bull; <i class="arrow fas fa-arrow-up"></i>キー：ズームイン
+            <br>　&bull; <i class="arrow fas fa-arrow-down"></i>キー：ズームアウト
+          </h2>
+        </div>
+      </div>
+      <div class="video">
+        <h1>紹介動画</h1>
+        <iframe id="TestGame" src="https://www.youtube-nocookie.com/embed/QX4TKNmn0ig" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <a href="https://www.google.com/intl/ja_jp/forms/about/" class="google-form-btn" target="_toword">
+      アンケートへ
+      &nbsp;<i class="fas fa-external-link-alt"></i>
+    </a>
+    <a href="https://ydagame.wixsite.com/presen-ydagame2021" class="back-top-top">
+      <i class="fas fa-arrow-left"></i>&nbsp;
+      ゲーム科TOPへ
+    </a>
+
+    <div class="moveToTop"></div>
+
+    <footer id="footer">&copy; 2021 DX9チーム</footer>
+  </body>
+</html>

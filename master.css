@@ -1,0 +1,398 @@
+:root
+{
+  --popup-scale: 1.05;
+  --duration-value: 0.3s;
+  --border-radius-value: 20px;
+  --box-shadow-value: 0px 0px 10px rgba(0,0,0,0.4);
+
+  --card-item-width: 230px;
+  --card-item-height: 300px;
+  --card-item-margin: 0 auto 0 auto;
+
+  --card-item-img-width: 220px;
+
+  --footer-height: 24px;
+}
+
+body
+{
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  background-attachment: fixed;
+  
+  background-color: #F4F5F7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.big
+{
+  background: url("DX9-Team.png") no-repeat;
+
+  width: calc(1960px / 5);
+  height: calc(1410px / 5);
+  background-size: calc(1960px / 5);
+
+  margin: 0 auto 0 auto;
+
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: pixelated;
+}
+
+.mini
+{
+  background: url("DX9-Team.png") no-repeat;
+  transition-duration: 0.3s;
+  margin: -10px 0 20px 0;
+
+  /* width: 200px;
+  height: 116px;
+  background-size: 200px; */
+
+  width: calc(1960px / 12);
+  height: calc(1410px / 12 - 20px);
+  background-size: calc(1960px / 12);
+
+  position: relative;
+  top: 24px;
+  right: 20px;
+}
+
+.notsupport-img
+{
+  background: url(DX9-Team.png) no-repeat;
+  width: 592px;
+  height: 337px;
+  background-size: 592px;
+  margin: 0 auto;
+  transform: scale(0.5);
+}
+
+header
+{
+  position: absolute;
+  background: url(https://static.vecteezy.com/system/resources/previews/002/072/481/original/abstract-geometric-white-wallpaper-free-vector.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  z-index: -1;
+  box-shadow: var(--box-shadow-value);
+}
+
+nav
+{
+  text-align: center;
+  margin-bottom: 40px;
+}
+nav ul
+{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
+}
+nav li
+{
+  list-style: none;
+  display: inline-block;
+  width: 250px;
+  /* width: 6%; */
+  margin-left: -7px;
+}
+nav li.current
+{
+  border-bottom: darkorange solid 3px;
+}
+nav li:not(:first-child)
+{
+  border-left: 3px solid #aaa;
+}
+nav li:not(:last-child)
+{
+  border-right: 3px solid #aaa;
+}
+nav a
+{
+  text-decoration: none;
+  color: #aaa;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 2px;
+  transition-duration: 0.1s;
+}
+nav .current a
+{
+  color: black;
+}
+nav .tab a:hover
+{
+  color: darkorange;
+  cursor: pointer;
+}
+
+.mobile-nav
+{
+  display: none !important;
+}
+.mobile-nav-menu p
+{
+  font-size: 0 !important;
+}
+
+.mobile-nav-menu
+{
+  height: 0 !important;
+}
+
+.breadcrumb
+{
+  /* padding: 8px 0 0 200px; */
+  padding: 8px 0 0 calc(50% - 600px);
+  text-align: left;
+  list-style: none;
+
+  margin: 0;
+  width: 100%;
+  height: 28px;
+  background: #283593;
+}
+
+.breadcrumb li
+{
+  display: inline;
+  list-style: none;
+}
+
+.breadcrumb li:after
+{
+  /* >を表示*/
+  content: '>';
+  padding: 0 0.2em;
+  color: white;
+}
+
+.breadcrumb li:last-child:after
+{
+  content: '';
+}
+
+.breadcrumb li a
+{
+  text-decoration: underline;
+  color: white;/*色*/
+}
+
+.breadcrumb li a:hover
+{
+  text-decoration: none;
+}
+
+.breadcrumb span
+{
+  color: white;
+}
+
+.banner
+{
+  width: 1000px;
+  height: 200px;
+  max-width: 99vw;
+  margin: 10px auto;
+  background-size: 1000px;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow-value);
+  transition-duration: 0.3s;
+}
+
+video, iframe
+{
+  margin: 10px auto;
+  border-radius: 16px;
+  border: none;
+  border-style: none;
+  outline: none;
+  box-shadow: var(--box-shadow-value);
+  max-width: 100vw;
+}
+
+.moveToTop
+{
+  width: 50px;
+  height: 50px;
+  background: url("https://image.flaticon.com/icons/png/512/61/61769.png");
+  background-size: 100%;
+  position: fixed;
+  bottom: 26px;
+  right: 10px;
+  transition-duration: 0.3s;
+  transform: scale(0);
+}
+
+footer
+{
+  margin-top: auto;
+  background: #414141;
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  color: white;
+}
+
+a.back-top-top
+{
+  color: white;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto 60px;
+  text-decoration: none;
+  padding-top: 5px;
+}
+a.back-top-top:hover
+{
+  margin-top: 3px;
+  color: white;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+a.back-top-top
+{
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+a.google-form-btn
+{
+  color: white;
+  background-color: #673ab7;
+  border-bottom: 5px solid #3e2569;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  text-decoration: none;
+  padding-top: 5px;
+}
+a.google-form-btn:hover
+{
+  margin-top: 3px;
+  color: white;
+  background: #7c44db;
+  border-bottom: 2px solid #3e2569;
+}
+a.google-form-btn
+{
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar
+{
+  width: 1.5vh;
+  height: 1.5vh;
+}
+::-webkit-scrollbar-track
+{
+  background: #8e8e8e;
+}
+::-webkit-scrollbar-thumb
+{
+  background: #373737;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 480px)
+{
+  .big
+  {
+    width: 90vw;
+    height: 50vw;
+    background-size: 90vw;
+    margin: 0 auto !important;
+  }
+  .moveToTop
+  {
+    display: none;
+  }
+  header
+  {
+    height: 75vw;
+    background-size: auto 75vw;
+  }
+  .mobile-nav
+  {
+    display: block !important;
+    margin: 0 auto;
+    font-size: 48px;
+    color: darkorange;
+  }
+  .mobile-nav p
+  {
+    font-size: 14.5px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  .mobile-nav-menu
+  {
+    /* display: block !important; */
+    width: 100vw;
+    height: 200px;
+    z-index: 1;
+    background: white;
+    transition-duration: 0.3s;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+  }
+  .moble-nav-inner p
+  {
+    font-size: 0;
+    text-align: center;
+    font-weight: bold;
+    margin: 16px auto;
+    width: 60vw;
+    height: 40px;
+    transition-duration: 0.3s;
+  }
+  .moble-nav-inner a
+  {
+    text-decoration: none !important;
+    color: black;
+  }
+  .moble-nav-inner p:first-child
+  {
+    /* border-bottom: darkorange solid 3px; */
+  }
+  nav
+  {
+    margin-top: 50px;
+    display: none;
+  }
+  nav a
+  {
+    font-size: 24px;
+  }
+  nav li:not(:first-child)
+  {
+    border: none;
+  }
+  nav li:not(:last-child)
+  {
+    border: none;
+  }
+  nav li:first-child
+  {
+    border-bottom: #aaa solid 3px;
+  }
+}
