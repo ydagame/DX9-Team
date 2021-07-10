@@ -11,7 +11,7 @@
 
   --card-item-img-width: 220px;
 
-  --footer-height: 24px;
+  --footer-height: 18px;
 }
 
 body
@@ -233,7 +233,7 @@ video, iframe
   background: url("https://image.flaticon.com/icons/png/512/61/61769.png");
   background-size: 100%;
   position: fixed;
-  bottom: 26px;
+  bottom: 50px;
   right: 10px;
   transition-duration: 0.3s;
   transform: scale(0);
@@ -244,9 +244,12 @@ footer
   margin-top: auto;
   background: #414141;
   width: 100%;
-  height: 24px;
+  height: 32px;
   text-align: center;
   color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 10px;
 }
 
 a.back-top-top
@@ -370,10 +373,10 @@ a.google-form-btn
     text-decoration: none !important;
     color: black;
   }
-  .moble-nav-inner p:first-child
+  /* .moble-nav-inner p:first-child
   {
-    /* border-bottom: darkorange solid 3px; */
-  }
+    border-bottom: darkorange solid 3px;
+  } */
   nav
   {
     margin-top: 50px;
