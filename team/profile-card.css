@@ -126,6 +126,10 @@
   {
     width: 80vw;
   }
+  .bg i:hover
+  {
+    color: dimgray !important;
+  }
   .bg h2
   {
     margin-top: 0;
