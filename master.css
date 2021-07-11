@@ -241,7 +241,7 @@ footer
   color: white;
   font-weight: bold;
   font-size: 16px;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 a.back-top-top
@@ -361,13 +361,13 @@ a.google-form-btn
   }
   .mobile-nav-menu a
   {
-    color: black;
+    color: #aaa;
     text-decoration: none;
     font-weight: bold;
   }
   .mobile-nav-menu a.current
   {
-    color: #aaa; 
+    color: black; 
   }
   .mobile-nav-menu-close
   {
