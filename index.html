@@ -48,16 +48,18 @@
       </ul>
     </nav>
 
+    <!-- モバイルナビゲーション -->
     <div class="mobile-nav">
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars mobile-nav-icon mobile-nav-icon-close"></i>
       <p>MENU</p>
     </div>
-    <div class="mobile-nav-menu">
-      <div class="moble-nav-inner">
-        <p><a>作品紹介「KORO」</a></p>
+    <div class="mobile-nav-menu mobile-nav-menu-close">
+      <div class="mobile-nav-text mobile-nav-text-close">
+        <p><a class="current">作品紹介「KORO」</a></p>
         <p><a href="https://ydagame.github.io/DX9-Team/team/">チーム紹介</a></p>
       </div>
     </div>
+    <div class="mobile-nav-bar"></div>
 
     </script>
     
@@ -111,6 +113,12 @@
   color: var(--h1-color);
   font-weight: bold;
   margin-top: 50px;
+}
+.wrapper h1.game-title
+{
+  color: darkorange;
+  font-size: 100px !important;
+  text-align: center;
 }
 .wrapper h2
 {
@@ -169,7 +177,7 @@
   }
   .wrapper .text
   {
-    margin: 0 10px 0 20px;
+    margin: 0 0 0 20px !important;
   }
   .wrapper iframe
   {
@@ -182,9 +190,10 @@
     <div class="wrapper">
       <div class="summary">
         <div class="inner">
-          <div class="koro-logo">
-            <!-- <p class="kome">※ KORO</p> -->
-          </div>
+          <h1 class="game-title">KORO</h1>
+          <!-- <div class="koro-logo">
+            <p class="kome">※ KORO</p>
+          </div> -->
           <div class="game-image"></div>
         </div>
         <div class="text">

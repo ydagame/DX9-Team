@@ -88,7 +88,8 @@ header
   height: 250px;
   margin: 0 auto;
   z-index: -1;
-  box-shadow: var(--box-shadow-value);
+  /* box-shadow: var(--box-shadow-value); */
+  background: transparent;
 }
 
 nav
@@ -141,18 +142,9 @@ nav .tab a:hover
   cursor: pointer;
 }
 
-.mobile-nav
+.mobile-nav, .mobile-nav-menu
 {
-  display: none !important;
-}
-.mobile-nav-menu p
-{
-  font-size: 0 !important;
-}
-
-.mobile-nav-menu
-{
-  height: 0 !important;
+  display: none;
 }
 
 .breadcrumb
@@ -337,49 +329,69 @@ a.google-form-btn
   }
   .mobile-nav
   {
-    display: block !important;
+    display: block;
     margin: 0 auto;
     font-size: 48px;
     color: darkorange;
   }
   .mobile-nav p
   {
-    font-size: 14.5px;
+    font-size: 14.4px;
     font-weight: bold;
-    margin-top: 0;
+    margin: -6px auto;
+  }
+  .mobile-nav-icon
+  {
+    transition-duration: 0.3s;
+  }
+  .mobile-nav-icon-close
+  {
+    transform: rotateZ(0deg);
+  }
+  .mobile-nav-icon-open
+  {
+    transform: rotateZ(90deg);
   }
   .mobile-nav-menu
   {
-    /* display: block !important; */
+    transition-duration: 0.3s;
     width: 100vw;
-    height: 200px;
-    z-index: 1;
-    background: white;
-    transition-duration: 0.3s;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
-  }
-  .moble-nav-inner p
-  {
-    font-size: 0;
     text-align: center;
-    font-weight: bold;
-    margin: 16px auto;
-    width: 60vw;
-    height: 40px;
-    transition-duration: 0.3s;
+    display: block;
   }
-  .moble-nav-inner a
+  .mobile-nav-menu a
   {
-    text-decoration: none !important;
     color: black;
+    text-decoration: none;
+    font-weight: bold;
   }
-  /* .moble-nav-inner p:first-child
+  .mobile-nav-menu a.current
   {
-    border-bottom: darkorange solid 3px;
-  } */
+    color: #aaa; 
+  }
+  .mobile-nav-menu-close
+  {
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+  }
+  .mobile-nav-menu-open
+  {
+    visibility: visible;
+    height: 20vw;
+    font-size: 20px;
+  }
+  .mobile-nav-bar
+  {
+    display: block;
+    width: 40vw;
+    height: 5px;
+    background: lightgray;
+    margin: 40px auto;
+    border-radius: 50px;
+  }
   nav
   {
-    margin-top: 50px;
     display: none;
   }
   nav a
