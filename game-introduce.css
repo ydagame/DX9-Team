@@ -58,6 +58,10 @@
   color: var(--h1-color);
   font-size: 23px;
 }
+.wrapper a
+{
+  color: black;
+}
 .wrapper .description
 {
   display: flex;
