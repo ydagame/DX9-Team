@@ -32,11 +32,14 @@
 
   <body>
 
+    <!-- IEブロック -->
     <script type="text/javascript" src="../notsupport.js"></script>
 
+    <!-- ヘッダー -->
     <header></header>
     <div class="big" href="../"></div>
 
+    <!-- 通常ナビゲーション -->
     <nav>
       <ul>
         <li class="tab">
@@ -50,11 +53,11 @@
 
     <!-- モバイルナビゲーション -->
     <div class="mobile-nav">
-      <i class="fas fa-bars mobile-nav-icon mobile-nav-icon-close"></i>
+      <i class="fas fa-bars mobile-nav-icon close"></i>
       <p>MENU</p>
     </div>
-    <div class="mobile-nav-menu mobile-nav-menu-close">
-      <div class="mobile-nav-text mobile-nav-text-close">
+    <div class="mobile-nav-menu mobile-nav-menu close">
+      <div class="mobile-nav-text mobile-nav-text close">
         <p><a href="../">作品紹介「KORO」</a></p>
         <p><a class="current">チーム紹介</a></p>
       </div>
@@ -63,6 +66,7 @@
 
     <h2 style="margin: 20px auto 20px auto;">メンバー(50音順)</h2>
 
+    <!-- Profile -->
     <script src="profile-card.js"></script>
     <script>
       let kanai = new Profile("kanai");
@@ -108,14 +112,17 @@
       mizuno.create();
     </script>
 
+    <!-- ボタン -->
     <a href="https://ydagame.wixsite.com/presen-ydagame2021" class="back-top-top">
       <i class="fas fa-arrow-left"></i>&nbsp;
       ゲーム科TOPへ
     </a>
 
+    <!-- ページ上部に戻る -->
     <div class="moveToTop"></div>
     
-    <footer>&copy; 2021 DX9チーム</footer>
+    <!-- フッター -->
+    <footer><i class="far fa-copyright"></i>&nbsp;2021 DX9チーム</footer>
 
   </body>
 </html>

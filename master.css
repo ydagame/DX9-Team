@@ -355,11 +355,11 @@ a.google-form-btn
   {
     transition-duration: 0.3s;
   }
-  .mobile-nav-icon-close
+  .mobile-nav-icon.close
   {
     transform: rotateZ(0deg);
   }
-  .mobile-nav-icon-open
+  .mobile-nav-icon.open
   {
     transform: rotateZ(90deg);
   }
@@ -380,13 +380,13 @@ a.google-form-btn
   {
     color: black; 
   }
-  .mobile-nav-menu-close
+  .mobile-nav-menu.close
   {
     visibility: hidden;
     height: 0;
     font-size: 0;
   }
-  .mobile-nav-menu-open
+  .mobile-nav-menu.open
   {
     visibility: visible;
     height: 20vw;
