@@ -117,6 +117,118 @@
       </div>
     </div>
 
+    <!-- 資料 -->
+    <style>
+      .pdf
+      {
+        width: 512px;
+        height: 120px;
+        background: #F40F02;
+        margin: 50px auto 80px;
+        
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 20px;
+        box-shadow: var(--box-shadow-value);
+        color: ghostwhite;
+        font-weight: bold;
+      }
+      .pdf i
+      {
+        color: ghostwhite;
+        font-size: 80px;
+        padding: 0 20px 0 0;
+      }
+      .pdf .pdf-icon
+      {
+        background-repeat: no-repeat !important;
+        background: url(https://i1.wp.com/mizumasa.com/wp-content/uploads/2017/04/IMG_1694.png);
+        width: 120px;
+        height: 120px;
+        background-size: 120px;
+        border-radius: 20px;
+      }
+      .pdf .bar
+      {
+        width: 2px;
+        height: 50px;
+        background: ghostwhite;
+      }
+      .pdf .text
+      {
+        margin-left: 20px;
+      }
+      .pdf h3
+      {
+        font-size: 16px;
+        line-height: 10px;
+      }
+      .pdf h3 a
+      {
+        color: ghostwhite;
+      }
+      @media screen and (max-width: 480px)
+      {
+        .pdf
+        {
+          width: 90vw;
+          height: 24vw;
+          margin: 20px auto 50px;
+        }
+        .pdf::after
+        {
+          content: '\f1c1';
+          font-family: 'Font Awesome 5 Free';
+          margin: 0 auto;
+          padding: 0;
+          position: absolute;
+          right: 0;
+          color: ghostwhite;
+          font-size: 8vw;
+          width: 14vw;
+          height: 14vw;
+          background-size: 14vw !important;
+          /* background: url(https://i1.wp.com/mizumasa.com/wp-content/uploads/2017/04/IMG_1694.png); */
+          background-repeat: no-repeat;
+          z-index: 1;
+          border-radius: 14px 14px 0 0;
+          position: absolute;
+        }
+        .pdf i
+        {
+          display: none;
+        }
+        .pdf .bar
+        {
+          display: none;
+        }
+        .pdf .text
+        {
+          margin: 0;
+        }
+        .pdf h3
+        {
+          font-size: 3.7vw;
+        }
+      }
+    </style>
+    <div class="pdf">
+      <!-- <div class="pdf-icon"></div> -->
+      <i class="far fa-file-pdf"></i>
+      <div class="bar"></div>
+      <div class="text">
+        <h3>2021年7月15日</h3>
+        <h3>発表会ご清聴ありがとうございました</h3>
+        <h3>
+          <a href="https://ydagame.github.io/DX9-Team/DX9チーム前期プレゼン資料.pdf" target="_toword">こちら</a>
+          から発表に使用した資料を閲覧できます
+        </h3>
+      </div>
+    </div>
+
     <!-- ボタン -->
     <a href="https://forms.gle/q4wrzqWd3rnNLDFu7" class="google-form-btn" target="_toword">
       アンケートへ
