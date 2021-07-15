@@ -53,7 +53,7 @@ class Profile
    */
   add_socialLink(socialLink, url)
   {
-    const result = `<a href="${url}" target="_toword"><i class="${socialLink}"></i></a>`;
+    const result = `<a href="${url}" target="_blank"><i class="${socialLink}"></i></a>`;
     this.social_links.push(result);
   }
 
