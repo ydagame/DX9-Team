@@ -22,3 +22,12 @@
   </div>
 </div>
 <div class="mobile-nav-bar"></div>
+
+<!-- JavaScript -->
+<script>
+  $('.mobile-nav').click(function()
+  {
+    $('.close').toggleClass('open');
+  });
+  $('.current').removeAttr('href');
+</script>

@@ -30,7 +30,6 @@ function ajax_base(element, rootPath, filename, _Option_)
       const targetCurrentCheckString = '$isCurrent';
 
       html = html.replaceAll('{$root}', rootPath);
-      html = html.replaceAll(`href=""`, '');
 
       for (let i = 0; i < 10; i++)
       {
@@ -38,9 +37,6 @@ function ajax_base(element, rootPath, filename, _Option_)
         {
           // @param {currentTabClass} に書き換え
           html = html.replaceAll(`{${targetCurrentCheckString}${i}}`, currentTabClass);
-
-          // ナビゲーション規則 : <a class="" href=""></a>
-          html = html.replaceAll('class="current" href=', 'class="current"');
         }
         else
         {
