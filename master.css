@@ -14,25 +14,10 @@
   --footer-height: 18px;
 }
 
-*
-{
-  visibility: hidden;
-}
-.loading
-{
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: url(DX9-Team.png);
-  background-color: white;
-  background-size: auto 100vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-  visibility: visible;
-}
-
 body
 {
+  visibility: hidden;
+
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -339,10 +324,6 @@ a.google-form-btn
 
 @media screen and (max-width: 480px)
 {
-  .loading
-  {
-    background-size: 90vw auto;
-  }
   .big
   {
     width: 90vw;

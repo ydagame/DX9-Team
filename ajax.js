@@ -10,11 +10,7 @@ function nav(rootPath, _Option_)
 
 function ajax_complete()
 {
-  setTimeout(function()
-  {
-    $('*').css('visibility', 'visible');
-    $('.loading').css('display', 'none');
-  }, 1000);
+  $('body').css('visibility', 'visible');
 }
 
 /**
