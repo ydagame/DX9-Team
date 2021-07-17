@@ -20,12 +20,14 @@
 }
 .loading
 {
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background: url(DX9-Team.png);
   background-size: auto 100vh;
   background-repeat: no-repeat;
   background-position: center center;
+  visibility: visible;
 }
 @media screen and (max-width: 480px)
 {

@@ -10,8 +10,11 @@ function nav(rootPath, _Option_)
 
 function ajax_complete()
 {
-  $('*').css('visibility', 'visible');
-  $('.loading').css('display', 'none');
+  setTimeout(function()
+  {
+    $('*').css('visibility', 'visible');
+    $('.loading').css('display', 'none');
+  }, 1000);
 }
 
 /**
