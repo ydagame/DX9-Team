@@ -8,6 +8,11 @@ function nav(rootPath, _Option_)
   ajax_base('.nav', rootPath, 'nav.html', _Option_);
 }
 
+function ajax_complete()
+{
+  $('*').css('visibility', 'visible');
+}
+
 /**
  * Ajaxベース
  * @param {string} element Target Element Id or Class
