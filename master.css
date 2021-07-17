@@ -13,9 +13,26 @@
 
   --footer-height: 18px;
 }
+
 *
 {
   visibility: hidden;
+}
+.loading
+{
+  width: 100vw;
+  height: 100vh;
+  background: url(DX9-Team.png);
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 480px)
+{
+  .loading
+  {
+    background-size: 90vw;
+  }
 }
 
 body
