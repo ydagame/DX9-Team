@@ -5,7 +5,7 @@
  */
 function nav(rootPath, _Option_)
 {
-  ajax_base('.nav', rootPath, 'nav.html', _Option_);
+  ajax_base('nav', rootPath, 'nav.html', _Option_);
 }
 
 /**
@@ -21,7 +21,6 @@ function ajax_base(element, rootPath, filename, _Option_)
   {
     url     : `${rootPath}./include/${filename}`,
     cache   : false,
-    async   : false,
     success : function(html)
     {
       // --------------------------------------------
@@ -48,7 +47,8 @@ function ajax_base(element, rootPath, filename, _Option_)
       // --------------------------------------------
 
       // 書き込み
-      $(element).html(html);
+      // $(element).html(html);
+      document.getElementsByClassName(element)[0].innerHTML = html;
     }
   });
 }
