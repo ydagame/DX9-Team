@@ -21,6 +21,7 @@ function ajax_base(element, rootPath, filename, _Option_)
   {
     url     : `${rootPath}./include/${filename}`,
     cache   : false,
+    async   : false,
     success : function(html)
     {
       // --------------------------------------------
