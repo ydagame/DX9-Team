@@ -1,4 +1,4 @@
-$(document).ready(function()
+$(window).on('load', function()
 {
   $('.mobile-nav').click(function()
   {
