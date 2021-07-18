@@ -1,11 +1,11 @@
 /**
  * ナビゲーション
  * @param {string} rootPath 
- * @param {Number} _Option_ 
+ * @param {number} currentIndexOfNav 
  */
-function nav(rootPath, _Option_)
+function nav(rootPath, currentIndexOfNav)
 {
-  ajax_base('.nav', rootPath, 'nav.html', _Option_);
+  ajax_base('.nav', rootPath, 'nav.html', currentIndexOfNav);
 }
 
 function ajax_complete()
