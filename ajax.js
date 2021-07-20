@@ -1,11 +1,26 @@
 /**
- * ナビゲーション
- * @param {string} rootPath 
- * @param {number} currentIndexOfNav 
+ * AjaxItemクラス
  */
-function nav(rootPath, currentIndexOfNav)
+class AjaxItem
 {
-  ajax_base('.nav', rootPath, 'nav.html', currentIndexOfNav);
+  /**
+   * ナビゲーション
+   * @param {string} rootPath 
+   * @param {number} currentIndexOfNav 
+   */
+  static nav(rootPath, currentIndexOfNav)
+  {
+    ajax_base('.nav', rootPath, 'nav.html', currentIndexOfNav);
+  }
+
+  /**
+   * フォトスライド
+   * @param {string} rootPath 
+   */
+  static photoslide(rootPath)
+  {
+    ajax_base('.photoslide', rootPath, 'photoslide.html', null);
+  }
 }
 
 function ajax_complete()
@@ -26,30 +41,34 @@ function ajax_base(element, rootPath, filename, _Option_)
   {
     url     : `${rootPath}./include/${filename}`,
     cache   : false,
+    async   : true,
     success : function(html)
     {
-      // --------------------------------------------
-      // ナビゲーション
-      const currentTabClass          = 'current';
-      const otherTabClass            = 'tab';
-      const targetCurrentCheckString = '$isCurrent';
-
-      html = html.replaceAll('{$root}', rootPath);
-
-      for (let i = 0; i < 10; i++)
+      if (element == '.nav')
       {
-        if (i == _Option_)
+        // --------------------------------------------
+        // ナビゲーション
+        const currentTabClass          = 'current';
+        const otherTabClass            = 'tab';
+        const targetCurrentCheckString = '$isCurrent';
+
+        html = html.replaceAll('{$root}', rootPath);
+
+        for (let i = 0; i < 10; i++)
         {
-          // @param {currentTabClass} に書き換え
-          html = html.replaceAll(`{${targetCurrentCheckString}${i}}`, currentTabClass);
+          if (i == _Option_)
+          {
+            // @param {currentTabClass} に書き換え
+            html = html.replaceAll(`{${targetCurrentCheckString}${i}}`, currentTabClass);
+          }
+          else
+          {
+            // @param {otherTabClass} に書き換え
+            html = html.replaceAll(`{${targetCurrentCheckString}${i}}`, otherTabClass); 
+          }
         }
-        else
-        {
-          // @param {otherTabClass} に書き換え
-          html = html.replaceAll(`{${targetCurrentCheckString}${i}}`, otherTabClass); 
-        }
+        // --------------------------------------------
       }
-      // --------------------------------------------
 
       // 書き込み
       $(element).html(html);
