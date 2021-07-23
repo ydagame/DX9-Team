@@ -43,6 +43,21 @@ body
 /*==================================
              Logo Image
 ==================================*/
+.large
+{
+  background: url(DX9-Team.png) no-repeat;
+
+  width: calc(1960px / 2);
+  height: calc(1410px / 2);
+  background-size: calc(1960px / 2);
+  margin: 0 auto;
+
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: pixelated;
+}
 .big
 {
   background: url("DX9-Team.png") no-repeat;
@@ -143,24 +158,9 @@ header
 }
 
 /*==================================
-             Banner
-==================================*/
-.banner
-{
-  width: 1000px;
-  height: 200px;
-  max-width: 99vw;
-  margin: 10px auto;
-  background-size: 1000px;
-  border-radius: 16px;
-  box-shadow: var(--box-shadow-value);
-  transition-duration: 0.3s;
-}
-
-/*==================================
           Iframe Contents
 ==================================*/
-video, iframe
+iframe
 {
   margin: 10px auto;
   border-radius: 16px;
@@ -192,12 +192,12 @@ video, iframe
 ==================================*/
 footer
 { 
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 
-  background: #414141;
+  background: #373737;
   width: 80vw;
   height: 48px;
   text-align: center;
@@ -273,8 +273,8 @@ a.google-form-btn
 ==================================*/
 ::-webkit-scrollbar
 {
-  width: 1.5vh;
-  height: 1.5vh;
+  width: 12px;
+  height: 12px;
 }
 ::-webkit-scrollbar-track
 {
@@ -291,7 +291,7 @@ a.google-form-btn
 ==================================*/
 @media screen and (max-width: 480px)
 {
-  .big
+  .big, .large
   {
     width: 90vw;
     height: 50vw;
