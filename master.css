@@ -43,13 +43,9 @@ body
 /*==================================
              Logo Image
 ==================================*/
-.large
+.logo
 {
   background: url(DX9-Team.png) no-repeat;
-
-  width: calc(1960px / 2);
-  height: calc(1410px / 2);
-  background-size: calc(1960px / 2);
   margin: 0 auto;
 
   -ms-interpolation-mode: nearest-neighbor;
@@ -58,21 +54,17 @@ body
   image-rendering: -o-crisp-edges;
   image-rendering: pixelated;
 }
+.large
+{
+  width: calc(1960px / 2);
+  height: calc(1410px / 2);
+  background-size: calc(1960px / 2);
+}
 .big
 {
-  background: url("DX9-Team.png") no-repeat;
-
   width: calc(1960px / 3);
   height: calc(1410px / 3);
   background-size: calc(1960px / 3);
-
-  margin: 0 auto 0 auto;
-
-  -ms-interpolation-mode: nearest-neighbor;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: pixelated;
 }
 .mini
 {
