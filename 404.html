@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="include/nav.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>404 NOT FOUND | DX9-Team</title>
+  </head>
+
+  <style>
+    body
+    {
+      text-align: center;
+      visibility: visible !important;
+    }
+    h1
+    {
+      font-size: 64px;
+      color: darkorange;
+      margin: -50px auto;
+    }
+    h2
+    {
+      margin: 70px auto 0;
+      color: black;
+    }
+    .return-to-top
+    {
+      width: 250px;
+      height: 50px;
+      background: dodgerblue;
+      margin: 50px auto;
+      /* border-radius: 25px; */
+      border-bottom: 5px solid #1e70ff;
+
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    @media screen and (min-width: 481px)
+    {
+      .return-to-top:hover
+      {
+        margin: 53px auto;
+        background: #1e70ff;
+        border-bottom: 2px solid #1e50ff;
+      }
+    }
+    @media screen and (max-width: 480px)
+    {
+      h1
+      {
+        margin: 0 auto;
+      }
+      h2
+      {
+        font-size: 5vw;
+        margin: 30px auto;
+      }
+      .return-to-top
+      {
+        width: 60vw;
+        font-size: 4vw;
+        height: 12vw;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="logo big"></div>
+    <div class="mobile-nav-bar"></div>
+    <h1>404エラー</h1>
+    <h2>お探しのページは<font color="red">見つかりません</font>でした</h2>
+
+    <a href="https://ydagame.github.io/DX9-Team/" class="return-to-top">トップページに戻る</a>
+  </body>
+
+</html>
