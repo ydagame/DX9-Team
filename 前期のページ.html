@@ -30,15 +30,15 @@
     </script>
 
     <!-- 見た目 -->
-    <title>作品紹介「KORO」 | DX9チーム</title>
+    <title>前期のページ | DX9チーム</title>
     <link rel="canonical" href="https://ydagame.github.io/DX9-Team/前期のページ"/>
-    <meta property="og:title"     content="作品紹介「KORO」 | DX9チーム"/>
+    <meta property="og:title"     content="前期のページ | DX9チーム"/>
     <meta property="og:url"       content="https://ydagame.github.io/DX9-Team/前期のページ"/>
-    <meta property="og:site_name" content="DX9チーム"/>
+    <meta property="og:site_name" content="前期のページ | DX9チーム"/>
     <meta property="og:type"      content="website"/>
     <meta property="og:image"     content="https://raw.githubusercontent.com/ydagame/DX9-Team/main/DX9-Team-white.png"/>
     <meta name="twitter:card"     content="summary_large_image"/>
-    <meta name="twitter:title"    content="作品紹介「KORO」 | DX9チーム"/>
+    <meta name="twitter:title"    content="前期のページ | DX9チーム"/>
     <meta name="description"      content="YDAゲーム科の2年DX9チームのウェブサイトです"/>
     <meta name="theme-color"      content="#FF8C00"/>
   </head>
@@ -48,11 +48,67 @@
     <!-- IEブロック -->
     <script type="text/javascript" src="notsupport.js"></script>
 
+    <h1 style="text-align: center; margin-bottom: 200px;">只今後期のページを準備中です...</h1>
+
     <!-- アイコン -->
     <div class="logo big"></div>
 
     <!-- ナビゲーション -->
-    <div class="nav"></div>
+    <!-- <div class="nav"></div> -->
+    <style>
+      .back-k
+      {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        position: fixed;
+        margin: 20px;
+        border-radius: 200px;
+
+        text-align: center;
+        text-decoration: none;
+        color: white;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        transition-duration: 0.3s;
+
+        display: none;
+      }
+      .back-k:hover
+      {
+        cursor: pointer;
+
+        width: 240px;
+      }
+      .back-k i
+      {
+        font-size: 32px;
+      }
+      .back-k span
+      {
+        font-size: 0;
+        font-weight: bold;
+      }
+    </style>
+    <a href="../DX9-Team/" class="back-k">
+      <i class="fas fa-arrow-left"></i><span>&nbsp;後期のページに戻る</span>
+    </a>
+    <script>
+      $('.back-k').on('mouseover', function()
+      {
+        $(this).find('span').css('transition-duration', '0.3s');
+        $(this).find('span').css('font-size', '18px');
+      });
+      $('.back-k').on('mouseout', function()
+      {
+        $(this).find('span').css('transition-duration', '0s');
+        $(this).find('span').css('font-size', '0');
+      });
+    </script>
 
     <!-- KORO -->
     <div class="wrapper">
@@ -202,20 +258,24 @@
     </div>
 
     <!-- ボタン -->
-    <a href="https://forms.gle/q4wrzqWd3rnNLDFu7" class="google-form-btn" target="_blank">
+    <!-- <a href="https://forms.gle/q4wrzqWd3rnNLDFu7" class="google-form-btn" target="_blank">
       アンケートへ
       &nbsp;<i class="fas fa-external-link-alt"></i>
     </a>
     <a href="https://ydagame.wixsite.com/presen-ydagame2021" class="back-top-top">
       <i class="fas fa-arrow-left"></i>&nbsp;
       ゲーム科TOPへ
-    </a>
+    </a> -->
 
     <!-- ページ上部に戻る -->
     <div class="moveToTop"></div>
 
     <!-- フッター -->
     <footer><i class="far fa-copyright"></i>&nbsp;2021 DX9チーム</footer>
+
+    <script>
+      ajax_complete();
+    </script>
 
   </body>
 </html>
