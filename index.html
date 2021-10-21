@@ -31,14 +31,14 @@
 
     <!-- 見た目 -->
     <title>前期のページ | DX9チーム</title>
-    <link rel="canonical" href="https://ydagame.github.io/DX9-Team/前期のページ"/>
-    <meta property="og:title"     content="前期のページ | DX9チーム"/>
-    <meta property="og:url"       content="https://ydagame.github.io/DX9-Team/前期のページ"/>
-    <meta property="og:site_name" content="前期のページ | DX9チーム"/>
+    <link rel="canonical" href="https://ydagame.github.io/DX9-Team/"/>
+    <meta property="og:title"     content="ホーム | DX9チーム"/>
+    <meta property="og:url"       content="https://ydagame.github.io/DX9-Team/"/>
+    <meta property="og:site_name" content="ホーム | DX9チーム"/>
     <meta property="og:type"      content="website"/>
     <meta property="og:image"     content="https://raw.githubusercontent.com/ydagame/DX9-Team/main/DX9-Team-white.png"/>
     <meta name="twitter:card"     content="summary_large_image"/>
-    <meta name="twitter:title"    content="前期のページ | DX9チーム"/>
+    <meta name="twitter:title"    content="ホーム | DX9チーム"/>
     <meta name="description"      content="YDAゲーム科の2年DX9チームのウェブサイトです"/>
     <meta name="theme-color"      content="#FF8C00"/>
   </head>
@@ -47,8 +47,6 @@
 
     <!-- IEブロック -->
     <script type="text/javascript" src="notsupport.js"></script>
-
-    <h1 style="text-align: center; margin-bottom: 200px;">只今後期のページを準備中です...</h1>
 
     <!-- アイコン -->
     <div class="logo big"></div>
@@ -110,16 +108,34 @@
       });
     </script>
 
-    <!-- KORO -->
     <div class="wrapper">
+      <div class="video">
+        <iframe style="margin: 40px auto; width: 1200px; height: calc(1200px / 16 * 9);" src="https://www.youtube-nocookie.com/embed/Ve7KfERsMKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <style>
+      @media screen and (max-width: 480px)
+      {
+        iframe
+        {
+          width: 90vw !important;
+          height: calc(90vw / 16 * 9) !important;
+          margin: 0 auto;
+        }
+      }
+    </style>
+
+    <!-- KORO -->
+    <div class="wrapper" style="margin: -100px auto 40px;">
       <div class="summary">
         <div class="inner">
-          <h1 class="game-title">
+          <h1 class="game-title" style="margin-bottom: 0; display: none;">
             <span  style="color: #19AA00;">K</span
             ><span style="color: #0D0EDE;">O</span
             ><span style="color: #000000;">RO</span>
           </h1>
-          <div class="game-image"></div>
+          <!-- <div class="game-image"></div> -->
         </div>
         <div class="text">
           <h1><i class="fas fa-gamepad"></i> ゲーム概要</h1>
@@ -150,9 +166,9 @@
         </div>
       </div>
       <div class="video">
-        <h1>これまでの成果の紹介</h1>
+        <!-- <h1>これまでの成果の紹介</h1>
         <iframe src="https://www.youtube-nocookie.com/embed/IJMUukZ84HQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h4>※今回は紹介動画のみの展示とさせていただきます</h4>
+        <h4>※今回は紹介動画のみの展示とさせていただきます</h4> -->
       </div>
     </div>
 
@@ -174,6 +190,8 @@
         box-shadow: var(--box-shadow-value);
         color: ghostwhite;
         font-weight: bold;
+
+        display: none;
       }
       .pdf i
       {
@@ -262,7 +280,8 @@
       アンケートへ
       &nbsp;<i class="fas fa-external-link-alt"></i>
     </a>
-    <a href="https://ydagame.wixsite.com/presen-ydagame2021" class="back-top-top">
+    <!-- <a href="https://ydagame.wixsite.com/presen-ydagame2021" class="back-top-top"> -->
+    <a href="https://ydagame.wixsite.com/ydagame2021-sf" class="back-top-top">
       <i class="fas fa-arrow-left"></i>&nbsp;
       ゲーム科TOPへ
     </a>

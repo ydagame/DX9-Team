@@ -110,8 +110,8 @@ class Profile
 
     for (let e of this.tantouList) this.html += e;
 
-    this.html +=
-            `<h1 class="yotei">今後の予定</h1>`;
+    // this.html +=
+    //         `<h1 class="yotei">今後の予定</h1>`;
 
     for (let e of this.yoteiList) this.html += e;
 
