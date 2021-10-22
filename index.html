@@ -53,60 +53,6 @@
 
     <!-- ナビゲーション -->
     <div class="nav"></div>
-    <style>
-      .back-k
-      {
-        width: 100px;
-        height: 100px;
-        background: orange;
-        position: fixed;
-        margin: 20px;
-        border-radius: 200px;
-
-        text-align: center;
-        text-decoration: none;
-        color: white;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        transition-duration: 0.3s;
-
-        display: none;
-      }
-      .back-k:hover
-      {
-        cursor: pointer;
-
-        width: 240px;
-      }
-      .back-k i
-      {
-        font-size: 32px;
-      }
-      .back-k span
-      {
-        font-size: 0;
-        font-weight: bold;
-      }
-    </style>
-    <a href="../DX9-Team/" class="back-k">
-      <i class="fas fa-arrow-left"></i><span>&nbsp;後期のページに戻る</span>
-    </a>
-    <script>
-      $('.back-k').on('mouseover', function()
-      {
-        $(this).find('span').css('transition-duration', '0.3s');
-        $(this).find('span').css('font-size', '18px');
-      });
-      $('.back-k').on('mouseout', function()
-      {
-        $(this).find('span').css('transition-duration', '0s');
-        $(this).find('span').css('font-size', '0');
-      });
-    </script>
 
     <div class="wrapper">
       <div class="video">
@@ -137,32 +83,39 @@
           </h1>
           <!-- <div class="game-image"></div> -->
         </div>
-        <div class="text">
-          <h1><i class="fas fa-gamepad"></i> ゲーム概要</h1>
-          <h2>ステージを傾けてボールを転がし、<br>迷路から脱出するゲームです</h2>
-          <h2>
-            <a href="https://g.co/kgs/LgRC2v" target="_blank">TAMA</a>
-            というゲームをモチーフにしています
-          </h2>
-          <h1><i class="fas fa-pencil-ruler"></i> ゲームルール</h1>
-          <h2>ステージを傾けてボールを転がし<br>制限時間以内にゴールを目指す</h2>
-          <h1><i class="far fa-keyboard"></i> 操作説明</h1>
-          <div class="description">
-            <h2>&bull; ステージを傾ける
-              <br>　&bull; W：奥
-              <br>　&bull; S：手前
-              <br>　&bull; D：右
-              <br>　&bull; A：左
+        <div class="text" style="display: flex; flex-direction: row; margin: 40px auto 0;">
+
+          <div class="left-side">
+            <h1><i class="fas fa-gamepad"></i> ゲーム概要</h1>
+            <h2>ステージを傾けてボールを転がし、<br>迷路から脱出するゲームです</h2>
+            <h2>
+              <a href="https://g.co/kgs/LgRC2v" target="_blank">TAMA</a>
+              というゲームをモチーフにしています
             </h2>
-            <h2>&bull; ステージを回転させる
-              <br>　&bull; <i class="arrow fas fa-arrow-right"></i>キー：時計回り
-              <br>　&bull; <i class="arrow fas fa-arrow-left"></i>キー：反時計回り
+            <h1><i class="fas fa-pencil-ruler"></i> ゲームルール</h1>
+            <h2>ステージを傾けてボールを転がし<br>制限時間以内にゴールを目指す</h2>
+          </div>
+
+          <div class="right-side">
+            <h1><i class="far fa-keyboard"></i> 操作説明</h1>
+            <div class="description">
+              <h2>&bull; ステージを傾ける
+                <br>　&bull; W：奥
+                <br>　&bull; S：手前
+                <br>　&bull; D：右
+                <br>　&bull; A：左
+              </h2>
+              <h2>&bull; ステージを回転させる
+                <br>　&bull; <i class="arrow fas fa-arrow-right"></i>キー：時計回り
+                <br>　&bull; <i class="arrow fas fa-arrow-left"></i>キー：反時計回り
+              </h2>
+            </div>
+            <h2>&bull; ズーム
+              <br>　&bull; <i class="arrow fas fa-arrow-up"></i>キー：ズームイン
+              <br>　&bull; <i class="arrow fas fa-arrow-down"></i>キー：ズームアウト
             </h2>
           </div>
-          <h2>&bull; ズーム
-            <br>　&bull; <i class="arrow fas fa-arrow-up"></i>キー：ズームイン
-            <br>　&bull; <i class="arrow fas fa-arrow-down"></i>キー：ズームアウト
-          </h2>
+
         </div>
       </div>
       <div class="video">
@@ -171,6 +124,16 @@
         <h4>※今回は紹介動画のみの展示とさせていただきます</h4> -->
       </div>
     </div>
+
+    <style>
+      @media screen and (max-width: 480px)
+      {
+        .text
+        {
+          flex-direction: column !important;
+        }
+      }
+    </style>
 
     <!-- 資料 -->
     <style>
