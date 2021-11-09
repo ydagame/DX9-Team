@@ -94,11 +94,11 @@ class Profile
           `<span>` +
             `<h1 class="name">Name</h1>` +
             `<h2>${this.name}</h2>` +
-            `<h3 class="furigana">（${this.furigana}）</h3>` +
-            `<h1>Link</h1>` +
-            `<h3>`;
+            `<h3 class="furigana">（${this.furigana}）</h3>`;
+            // `<h1>Link</h1>` +
+            // `<h3>`;
 
-    for (let e of this.social_links) this.html += e;
+    // for (let e of this.social_links) this.html += e;
 
     this.html +=
             `</h3>` +

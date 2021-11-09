@@ -1,0 +1,193 @@
+.header
+{
+  width: 99.3vw;
+  height: 340px;
+  background: #6aaf16;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: -2;
+  box-shadow: var(--box-shadow-value);
+  border-radius: 0 0 400px 400px;
+  /* border-right: white 14px solid; */
+  /* border-left:  white 14px solid; */
+}
+.koro-logo-black
+{
+  width: 500px;
+  height: 500px;
+  background-size: 500px !important;
+  background: url(KORO-Logo-Black.png) no-repeat;
+  margin: 20px auto;
+  box-shadow: var(--box-shadow-value);
+  border-radius: 50%;
+}
+.shadow
+{
+  width: 300px;
+  height: 50px;
+  background: darkgrey;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 490px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.yokoari
+{
+  width: 1380px;
+  margin: 0 auto;
+  line-height: 20px;
+}
+.yokoari h1
+{
+  font-size: 50px;
+  color: goldenrod;
+  text-shadow: 1px 1px 0 goldenrod, -1px -1px 0 goldenrod,
+              -1px 1px 0 goldenrod,  1px -1px 0 goldenrod,
+               0px 1px 0 goldenrod,  0   -1px 0 goldenrod,
+              -1px 0   0 goldenrod,  1px  0   0 goldenrod;
+}
+.yokoari h2
+{
+  font-size: 70px;
+  text-align: center;
+  color: orange;
+  text-shadow: 1px 1px 0 orange, -1px -1px 0 orange,
+              -1px 1px 0 orange,  1px -1px 0 orange,
+               0px 1px 0 orange,  0   -1px 0 orange,
+              -1px 0   0 orange,  1px  0   0 orange;
+}
+.yokoari .only-mobile-view
+{
+  display: none;
+}
+
+.download
+{
+  margin: 0 auto;
+}
+.download h1
+{
+  color: #F40F02;
+  font-size: 42px;
+  text-align: center;
+}
+.download .br
+{
+  display: none;
+}
+.download .desc
+{
+  font-size: 24px;
+  font-weight: bold;
+  width: 720px;
+  margin: 0 auto 70px;
+  line-height: 50px;
+}
+.download .desc a
+{
+  color: black;
+}
+.download .desc p
+{
+  font-size: 16px;
+  text-align: right;
+  color: dimgray;
+}
+
+.spilt-bar
+{
+  width: 340px;
+  height: 5px;
+  background: lightgray;
+  margin: 40px auto;
+  border-radius: 50px;
+}
+
+.nav
+{
+  margin: 50px auto !important;
+}
+
+@media screen and (max-width: 480px)
+{
+  .header
+  {
+    height: 34vw;
+    border-radius: 0 0 80px 80px;
+  }
+  .koro-logo-black
+  {
+    width: 50vw;
+    height: 50vw;
+    background-size: 50vw !important;
+  }
+  .shadow
+  {
+    width: 25vw;
+    height: 8vw;
+    top: 50vw;
+  }
+  .yokoari
+  {
+    margin: -20px auto 0;
+    width: 90vw;
+  }
+  .yokoari h1
+  {
+    font-size: 7vw;
+  }
+  .yokoari h2
+  {
+    font-size: 9vw;
+  }
+  .only-pc-view
+  {
+    display: none;
+  }
+  .yokoari .only-mobile-view
+  {
+    display: block;
+  }
+
+  .download h1
+  {
+    font-size: 7vw;
+  }
+  .download .br
+  {
+    display: block;
+  }
+  .download .desc
+  {
+    width: 90vw;
+    font-size: 5vw;
+    line-height: 30px;
+  }
+  .download .desc li
+  {
+    padding-bottom: 20px;
+  }
+  .download .desc p
+  {
+    font-size: 3.6vw;
+    text-align: right;
+  }
+
+  .spilt-bar
+  {
+    width: 40vw;
+    height: 5px;
+    background: lightgray;
+    margin: 40px auto;
+    border-radius: 50px;
+  }
+
+  .nav
+  {
+    margin: 0 auto !important;
+  }
+}

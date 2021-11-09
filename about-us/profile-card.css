@@ -93,7 +93,8 @@
   .bg
   {
     width: 90vw;
-    height: 820px;
+    height: auto;
+    padding-bottom: 60px;
 
     margin: 0 auto 30px;
   }
