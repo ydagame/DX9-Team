@@ -113,6 +113,10 @@
   margin: 50px auto !important;
 }
 
+details:hover
+{
+  cursor: pointer;
+}
 .wd
 {
   width: 100%;
