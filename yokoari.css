@@ -113,6 +113,14 @@
   margin: 50px auto !important;
 }
 
+.wd
+{
+  width: 100%;
+  height: 500px;
+  background-size: 100% !important;
+  background: url(wd.jpg) no-repeat;
+}
+
 @media screen and (max-width: 480px)
 {
   .header
