@@ -12,11 +12,12 @@ const SocialLink =
 
 class Profile
 {
-  constructor(class_name)
+  constructor(class_name, isLeader = false)
   {
     this.class_name   = class_name;
     this.name         = "";
     this.furigana     = "";
+    this.isLeader     = isLeader;
     this.avatar_img   = "";
     this.social_links = [];
     this.tantouList   = [];
@@ -95,6 +96,10 @@ class Profile
             `<h1 class="name">Name</h1>` +
             `<h2>${this.name}</h2>` +
             `<h3 class="furigana">（${this.furigana}）</h3>`;
+
+            if (this.isLeader)
+              this.html += `<h4 class="leader">（リーダー）</h4>`;
+
             // `<h1>Link</h1>` +
             // `<h3>`;
 
