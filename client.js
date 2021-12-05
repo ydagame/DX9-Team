@@ -2,7 +2,7 @@ let socket;
 
 function connect()
 {
-  let url = `wss://shopipi.app:25565`;
+  let url = `wss://shopipi.app:5555`;
   socket  = new WebSocket(url);
 
   socket.onopen = onOpen;
