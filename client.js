@@ -41,15 +41,18 @@ $(document).ready(function()
   // Set all local href ignore
   else
   {
-    $('a').each(function()
+    setTimeout(() =>
     {
-      let href = $(this).attr('href');
-
-      if (href != undefined && !href.includes('wix'))
+      $('a').each(function()
       {
-        $(this).attr('href', href + '?ignore=true');
-      }
-    });
+        let href = $(this).attr('href');
+
+        if (href != undefined && !href.includes('wix'))
+        {
+          $(this).attr('href', href + '?ignore=true');
+        }
+      });
+    }, 500);
   }
 });
 
