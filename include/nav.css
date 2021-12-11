@@ -89,7 +89,7 @@ nav .tab a:hover
     text-align: center;
     display: block;
   }
-  .mobile-nav-menu a
+  .mobile-nav-menu a, .mobile-nav-menu i
   {
     color: #aaa;
     text-decoration: none;
@@ -108,7 +108,7 @@ nav .tab a:hover
   .mobile-nav-menu.open
   {
     visibility: visible;
-    height: 20vw;
+    height: 170px;
     font-size: 20px;
   }
   .mobile-nav-bar

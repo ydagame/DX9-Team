@@ -1,0 +1,108 @@
+.large-banner
+{
+  width: 1200px;
+  height: var(--photo-height);
+  margin: 0 auto 50px;
+  box-shadow: var(--box-shadow-value);
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+}
+.whats-dx9-team
+{
+  background: #2D2A2E;
+}
+.KORO-banner
+{
+  background: #007ACC;
+}
+.KORO-banner .image
+{
+  width: 800px;
+  height: var(--photo-height);
+  background: url(KORO.png) no-repeat;
+  background-size: 800px;
+  border-radius: 0 20px 20px 0;
+}
+.large-banner .desc
+{
+  width: 340px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.large-banner .desc h1
+{
+  color: #FFF;
+}
+.large-banner .desc .bar
+{
+  width: 100px;
+  height: 6px;
+  background: #c3c6c8;
+  border-radius: 0 20px 20px 0;
+}
+.large-banner .desc p
+{
+  font-size: 20px;
+  color: white;
+}
+.large-banner .desc a
+{
+  font-size: 20px;
+  text-decoration: none;
+}
+.large-banner .desc a.link_1
+{
+ color: #00B8FC; 
+}
+.large-banner .desc a.link_2
+{
+  color: white;
+  text-decoration: underline;
+}
+.large-banner .desc a.link_3
+{
+  color: #c3c6c8;
+}
+.large-banner .desc i.fa-caret-right
+{
+  transform: scaleX(2);
+  transition-duration: 0.1s;
+}
+@media screen and (max-width: 480px)
+{
+  .large-banner
+  {
+    flex-direction: column;
+    width: 90vw;
+    height: 130vw;
+  }
+  .large-banner .desc
+  {
+    width: 80vw;
+    height: calc(130vw - (90vw / 16 * 9));
+  }
+  .large-banner .desc .bar
+  {
+    width: 23vw;
+  }
+  .large-banner .desc h1
+  {
+    font-size: 7vw;
+  }
+  .large-banner .desc p
+  {
+    font-size: 4.5vw;
+  }
+  .large-banner .desc a
+  {
+    font-size: 4.5vw;
+  }
+  .KORO-banner .image
+  {
+    width: 90vw;
+    height: calc(90vw / 16 * 9);
+    border-radius: 0 0 20px 20px;
+    background-size: 90vw;
+  }
+}

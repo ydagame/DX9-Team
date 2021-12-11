@@ -1,0 +1,177 @@
+:root
+{
+  --photo-width:  800px;
+  --photo-height: calc(var(--photo-width) / 16 * 9);
+  --photo-count:  10;
+  --box-shadow-value: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.photo-slider
+{
+  margin: 0 auto;
+  width: var(--photo-width);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.photo-slider i.default
+{
+  font-size: 48px;
+  vertical-align: bottom;
+  transition-duration: 0.3s;
+  
+  display: none;
+}
+.photo-slider i.mobile
+{
+  /* display: none; */
+
+  position: absolute;
+  z-index: 1;
+  color: rgba(30, 30, 30, 0.6);
+  font-size: 48px;
+
+  display: block;
+  left: 20px;
+}
+.photo-slider i.mobile:last-child
+{
+  right: 20px;
+  left: auto;
+}
+.photo-slider i.mobile:hover
+{
+  cursor: pointer;
+}
+.photo-slider i.default:hover
+{
+  transform: scale(1.1);
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+}
+.photo-wrapper
+{
+  margin: 0 auto;
+
+  width: var(--photo-width);
+  height: var(--photo-height);
+
+  overflow: hidden;
+
+  border-radius: 20px 0 0 20px;
+}
+.photo-wrapper .photo-list
+{
+  width: calc(var(--photo-width) * var(--photo-count));
+  height: var(--photo-height);
+  display: flex;
+  flex-direction: row;
+  transition-duration: 1s;
+}
+.photo-wrapper .photo-image
+{
+  width: var(--photo-width);
+  height: var(--photo-height);
+  background-size: var(--photo-width) !important;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  transition-duration: 0.3s;
+}
+.photo-wrapper .photo-image:hover
+{
+  transform: scale(1.1);
+}
+.slider-pagination
+{
+  position: absolute;
+  left: 50%;
+  top: calc(var(--photo-height) - 50px);
+  transform: translate(-50%, 0);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+.slider-pagination i
+{
+  padding: 0 4px 0 4px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.slider-pagination i:not(.current)
+{
+  transform: scale(0.5);
+}
+
+.photo-image.p00
+{
+  background: url(https://cdn.discordapp.com/attachments/726363367245086811/866876003020177418/DX9.jpg);
+}
+.photo-image.p01
+{
+  background-image: url(https://cdn.discordapp.com/attachments/866576565793325078/866576726040641566/20210719_160603.JPG);
+}
+.photo-image.p02, .photo-image.p03
+{
+  background-image: url(https://cdn.discordapp.com/attachments/866576565793325078/866576726040641566/20210719_160603.JPG);
+}
+
+@media screen and (max-width: 480px)
+{
+  .photo-slider
+  {
+    width: 90vw;
+  }
+  .photo-wrapper
+  {
+    width: 90vw;
+    height: calc(90vw / 16 * 9);
+    border-radius: 20px 20px 0 0;
+  }
+  .photo-wrapper .photo-list
+  {
+    width: calc(90vw * var(--photo-count));
+  }
+  .photo-wrapper .photo-image
+  {
+    width: 90vw;
+    height: calc(90vw / 16 * 9);
+    background-size: 90vw !important;
+    padding: 0;
+  }
+  .photo-slider i.mobile
+  {
+    position: absolute;
+    z-index: 1;
+    color: rgba(61, 61, 61, 0.6);
+    font-size: 10vw;
+
+    display: block;
+    left: 2vw;
+  }
+  .photo-slider i.default
+  {
+    display: none;
+  }
+  .photo-slider i.mobile:last-child
+  {
+    right: 2vw;
+    left: auto;
+  }
+  .photo-wrapper .photo-image:hover
+  {
+    transform: scale(1);
+  }
+  .slider-pagination
+  {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+    left: 50%;
+    top: calc((90vw / 16 * 9) - 8vw);
+    transform: translate(-50%, 0);
+    font-size: 3vw;
+    padding: 0;
+  }
+}

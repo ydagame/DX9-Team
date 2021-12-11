@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../include/nav.css">
     <link rel="stylesheet" href="profile-card.css">
     <link rel="stylesheet" href="../yokoari.css">
+    <link rel="stylesheet" href="../top-page.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
     <!-- JavaScript -->
@@ -25,10 +26,11 @@
     <script type="text/javascript" src="../master.js"></script>
     <script type="text/javascript" src="profile-card.js"></script>
     <script type="text/javascript" src="../ajax.js"></script>
+    <script src="../client.js"></script>
 
     <!-- Ajax -->
     <script>
-      AjaxItem.nav('../', 1);
+      AjaxItem.nav('../', 2);
     </script>
     
     <!-- 見た目 -->
@@ -50,12 +52,22 @@
     <!-- IEブロック -->
     <script type="text/javascript" src="../notsupport.js"></script>
 
-    <div class="header"></div>
-    <div class="koro-logo-black"></div>
-    <div class="shadow"></div>
+    <!-- <div class="header"></div> -->
+    <!-- <div class="koro-logo-black"></div> -->
+    <!-- <div class="shadow"></div> -->
+
+    <dir class="logo big"></dir>
 
     <!-- ナビゲーション -->
     <div class="nav"></div>
+    
+    <!-- ナビゲーション -->
+    <div class="nav-pc">
+      <a href="../" class="tab">ホーム</a>
+      <a href="../KORO" class="tab">作品紹介</a>
+      <a href="" class="tab current">メンバー紹介</a>
+      <a href="/DX9-Team/前期のページ" target="_blank" class="zenki tab">前期のページへ&nbsp;<i class="fas fa-external-link-alt"></i></a>
+    </div>
 
     <!-- 見出し -->
     <h2 style="margin: 20px auto 20px auto;">メンバー(50音順)</h2>
@@ -66,11 +78,11 @@
       kanai.set_name("金井 陽都", "かない はると");
       kanai.set_avatarImg("kanai.png");
       kanai.set_themeColor("dodgerblue");
-      kanai.add_TANTOU("床や壁のCubeオブジェクト");
+      kanai.add_TANTOU("配置オブジェクト");
       kanai.add_TANTOU("物理実装");
       kanai.add_TANTOU("レベルエディター");
-      kanai.add_TANTOU("Stageクラス");
-      kanai.add_TANTOU("Transformクラス");
+      kanai.add_TANTOU("マップ管理");
+      // kanai.add_TANTOU("Transformクラス");
       // kanai.add_YOTEI("Stage（フィールド）");
       kanai.create();
     </script>
@@ -81,9 +93,10 @@
       kawasaki.set_themeColor("orange");
       kawasaki.add_TANTOU("GameObjectクラス");
       kawasaki.add_TANTOU("UI");
-      kawasaki.add_TANTOU("SkyBox");
-      kawasaki.add_TANTOU("パーティクルエフェクト");
+      // kawasaki.add_TANTOU("SkyBox");
+      // kawasaki.add_TANTOU("パーティクルエフェクト");
       kawasaki.add_TANTOU("ゲームフロー実装");
+      kawasaki.add_TANTOU("演出全般")
       // kawasaki.add_YOTEI("セーブデータ実装");
       kawasaki.create();
     </script>
@@ -94,7 +107,6 @@
       kawana.set_themeColor("purple");
       kawana.add_TANTOU("カメラ");
       kawana.add_TANTOU("サウンド");
-      // kawana.add_YOTEI("サウンド");
       kawana.create();
     </script>
     <script>
@@ -104,15 +116,15 @@
       mizuno.set_themeColor("salmon");
       mizuno.add_TANTOU("転がる球体");
       mizuno.add_TANTOU("物理実装");
-      mizuno.add_TANTOU("ゴールの旗");
+      mizuno.add_TANTOU("3Dモデル作成");
       // mizuno.add_YOTEI("まだ実装できていない<br>&nbsp; 物理の実装");
       mizuno.create();
     </script>
 
     <!-- ボタン -->
-    <a href="https://ydagame.wixsite.com/presen-ydagame2021" class="back-top-top">
+    <a href="https://ydagame.wixsite.com/presentation2021" class="back-top-top">
       <i class="fas fa-arrow-left"></i>&nbsp;
-      トップページへ
+      ゲーム科TOPへ
     </a>
 
     <!-- ページ上部に戻る -->

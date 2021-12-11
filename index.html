@@ -1,302 +1,180 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="author"              content="shopipi">
-    <meta name="robots"              content="noindex,nofollow">
-    <meta http-equiv="pragma"        content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">
+<html lang="ja">
 
-    <!-- モバイル対応用 -->
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="shopipi">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <!-- モバイル対応用 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="include/nav.css">
-    <link rel="stylesheet" href="game-introduce.css">
-    <link rel="stylesheet" href="yokoari.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
 
-    <!-- JavaScript -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="master.js"></script>
-    <script type="text/javascript" src="ajax.js"></script>
-    <script type="text/javascript" src="client.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="top-page.css">
+  <link rel="stylesheet" href="large-banner.css">
+  <link rel="stylesheet" href="include/nav.css">
+  <link rel="stylesheet" href="yokoari.css">
+  <link rel="stylesheet" href="include/photoslide.css">
+  <link rel="stylesheet" href="popup/magnific-popup.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-    <!-- Ajax -->
-    <script>
-      AjaxItem.nav('', 0);
-    </script>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="master.js"></script>
+  <script src="ajax.js"></script>
+  <script src="client.js"></script>
+  <script src="popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- 見た目 -->
-    <title>作品紹介「KORO」 | DX9チーム</title>
-    <link rel="canonical" href="https://ydagame.github.io/DX9-Team/"/>
-    <meta property="og:title"     content="作品紹介「KORO」 | DX9チーム"/>
-    <meta property="og:url"       content="https://ydagame.github.io/DX9-Team/"/>
-    <meta property="og:site_name" content="作品紹介「KORO」 | DX9チーム"/>
-    <meta property="og:type"      content="website"/>
-    <meta property="og:image"     content="https://raw.githubusercontent.com/ydagame/DX9-Team/main/DX9-Team-white.png"/>
-    <meta name="twitter:card"     content="summary_large_image"/>
-    <meta name="twitter:title"    content="作品紹介「KORO」 | DX9チーム"/>
-    <meta name="description"      content="YDAゲーム科の2年DX9チームのウェブサイトです"/>
-    <meta name="theme-color"      content="#FF8C00"/>
-  </head>
+  <!-- Ajax -->
+  <script>
+    AjaxItem.nav('', 0);
+    AjaxItem.photoslide('');
+  </script>
 
-  <body onload="connect()">
+  <title>ホーム | DX9チーム</title>
+  <link rel="canonical" href="https://ydagame.github.io/DX9-Team/" />
+  <meta property="og:title" content="ホーム | DX9チーム" />
+  <meta property="og:url" content="https://ydagame.github.io/DX9-Team/" />
+  <meta property="og:site_name" content="ホーム | DX9チーム" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/ydagame/DX9-Team/main/DX9-Team-white.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ホーム | DX9チーム" />
+  <meta name="description" content="YDAゲーム科の2年DX9チームのウェブサイトです" />
+  <meta name="theme-color" content="#FF8C00" />
+</head>
 
-    <!-- IEブロック -->
-    <script type="text/javascript" src="notsupport.js"></script>
+<body>
 
-    <div class="header"></div>
-    <div class="koro-logo-black"></div>
-    <div class="shadow"></div>
-
-    <h1 style="text-align: center; color: #F40F02;">学科内発表会のサイトは準備中です...</h1>
-
-    <!-- ナビゲーション -->
+  <!-- Wrapper -->
+  <div class="wrapper">
+    <div class="logo large"></div>
     <div class="nav"></div>
-
-    <div class="yokoari">
-      <h1> - KORO - </h1>
-      <h2>ボールをころがして<span class="only-pc-view">ゴールをめざせ！！</span></h2>
-      <h2 class="only-mobile-view">ゴールをめざせ！！</h2>
+    <div class="sidebar">
+      <a class="only-pc-view popup-youtube pc" href="https://www.youtube.com/watch?v=8jMWSwc7Kv0">
+        <div class="banner zoom"></div>
+      </a>
+      <a data-id="8jMWSwc7Kv0" class="popup-youtube mobile only-mobile-view">
+        <div class="banner zoom"></div>
+      </a>
+      <div class="banner-split"></div>
+      <a class="popup-image" href="DX9-Teamポスター.png">
+        <div class="banner poster"></div>
+      </a>
     </div>
+  </div>
 
-    <!-- アイコン -->
-    <!-- <div class="logo big"></div> -->
+  <style>
+    .mfp-img
+    {
+      cursor: zoom-in;
+    }
+  </style>
 
-    <div class="wrapper">
-      <div class="video">
-        <iframe style="margin: 40px auto; width: 1200px; height: calc(1200px / 16 * 9);" src="https://www.youtube-nocookie.com/embed/Ve7KfERsMKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
+  <script>
+    $('.popup-youtube.pc').magnificPopup(
+    {
+      type: 'iframe'
+    });
 
-    <style>
-      @media screen and (max-width: 480px)
+    $('.popup-youtube.mobile').on('click',function()
+    {
+      let target = $(this).attr('data-id');
+      
+      $.magnificPopup.open(
       {
-        iframe
+        items:
         {
-          width: 90vw !important;
-          height: calc(90vw / 16 * 9) !important;
-          margin: 0 auto;
+          src: '<div class="movie-wrap"><iframe width="100%" height="256" src="https://www.youtube.com/embed/' + target + '?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+          type: 'inline',
+          modal: true
         }
-      }
-    </style>
+      });
+    });
 
-    <!-- KORO -->
-    <div class="wrapper" style="margin: -100px auto 40px;">
-      <div class="summary">
-        <div class="inner">
-          <h1 class="game-title" style="margin-bottom: 0; display: none;">
-            <span  style="color: #19AA00;">K</span
-            ><span style="color: #0D0EDE;">O</span
-            ><span style="color: #000000;">RO</span>
-          </h1>
-          <!-- <div class="game-image"></div> -->
-        </div>
-        <div class="text" style="display: flex; flex-direction: row; margin: 40px auto 0;">
-
-          <div class="left-side">
-            <h1><i class="fas fa-gamepad"></i> ゲーム概要</h1>
-            <h2>ステージを傾けてボールを転がし、<br>迷路から脱出するゲームです</h2>
-            <h2>
-              <a href="https://g.co/kgs/LgRC2v" target="_blank">TAMA</a>
-              というゲームをモチーフにしています
-            </h2>
-            <h1><i class="fas fa-pencil-ruler"></i> ゲームルール</h1>
-            <h2>ステージを傾けてボールを転がし<br>制限時間以内にゴールを目指す</h2>
-          </div>
-
-          <div class="right-side">
-            <h1><i class="far fa-keyboard"></i> 操作説明</h1>
-            <div class="description">
-              <h2>&bull; ステージを傾ける
-                <br>　&bull; W：奥
-                <br>　&bull; S：手前
-                <br>　&bull; D：右
-                <br>　&bull; A：左
-              </h2>
-              <h2>&bull; ステージを回転させる
-                <br>　&bull; Eキー：時計回り
-                <br>　&bull; Qキー：反時計回り
-              </h2>
-            </div>
-            <h2>&bull; ズーム
-              <br>　&bull; <i class="arrow fas fa-arrow-up"></i>キー：ズームイン
-              <br>　&bull; <i class="arrow fas fa-arrow-down"></i>キー：ズームアウト
-            </h2>
-          </div>
-
-        </div>
-      </div>
-      <div class="video">
-        <!-- <h1>これまでの成果の紹介</h1>
-        <iframe src="https://www.youtube-nocookie.com/embed/IJMUukZ84HQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h4>※今回は紹介動画のみの展示とさせていただきます</h4> -->
-      </div>
-    </div>
-
-    <style>
-      @media screen and (max-width: 480px)
+    $(function()
+    {
+      $('.popup-image').magnificPopup(
       {
-        .text
+        type: 'image'
+      });
+    });
+
+    $('.popup-image').click(function()
+    {
+      setTimeout(() =>
+      {
+        $('img').click(function()
         {
-          flex-direction: column !important;
-        }
-      }
-    </style>
+          window.open("DX9-Teamポスター.png");
+        });
+      }, 1);
+    });
+  </script>
 
-    <!-- 資料 -->
-    <style>
-      .pdf
-      {
-        width: 512px;
-        height: 120px;
-        background: #F40F02;
-        margin: 50px auto 80px;
-        
-        flex-direction: row;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  <!-- ナビゲーション -->
+  <div class="nav-pc">
+    <a href="" class="tab current">ホーム</a>
+    <a href="KORO" class="tab">作品紹介</a>
+    <a href="about-us/" class="tab">メンバー紹介</a>
+    <a href="/DX9-Team/前期のページ" target="_blank" class="zenki tab">前期のページへ&nbsp;<i class="fas fa-external-link-alt"></i></a>
+  </div>
 
-        border-radius: 20px;
-        box-shadow: var(--box-shadow-value);
-        color: ghostwhite;
-        font-weight: bold;
+  <!-- DX9チームとは？ -->
+  <div class="large-banner whats-dx9-team">
 
-        display: none;
-      }
-      .pdf i
-      {
-        color: ghostwhite;
-        font-size: 80px;
-        padding: 0 20px 0 0;
-      }
-      .pdf .bar
-      {
-        width: 2px;
-        height: 50px;
-        background: ghostwhite;
-      }
-      .pdf .text
-      {
-        margin-left: 20px;
-      }
-      .pdf h3
-      {
-        font-size: 16px;
-        line-height: 10px;
-      }
-      .pdf h3 a
-      {
-        color: ghostwhite;
-      }
-      @media screen and (max-width: 480px)
-      {
-        .pdf
-        {
-          width: 90vw;
-          height: 24vw;
-          margin: 20px auto 50px;
-        }
-        .pdf::after
-        {
-          content: '\f1c1';
-          font-family: 'Font Awesome 5 Free';
-          margin: 0 auto;
-          padding: 0;
-          position: absolute;
-          right: 0;
-          color: ghostwhite;
-          font-size: 8vw;
-          width: 14vw;
-          height: 14vw;
-          background-size: 14vw !important;
-          background-repeat: no-repeat;
-          z-index: 1;
-          border-radius: 14px 14px 0 0;
-          position: absolute;
-        }
-        .pdf i
-        {
-          display: none;
-        }
-        .pdf .bar
-        {
-          display: none;
-        }
-        .pdf .text
-        {
-          margin: 0;
-        }
-        .pdf h3
-        {
-          font-size: 3.7vw;
-        }
-      }
-    </style>
-    <div class="pdf">
-      <i class="far fa-file-pdf"></i>
+    <!-- Photo Slide -->
+    <div class="photoslide"></div>
+
+    <div class="desc">
+      <h1>DX9チームとは？</h1>
       <div class="bar"></div>
-      <div class="text">
-        <h3>2021年7月15日</h3>
-        <h3>前期発表会ご清聴ありがとうございました</h3>
-        <h3>
-          <a href="/DX9-Team/DX9チーム前期プレゼン資料.pdf" target="_blank">こちら</a>
-          から発表に使用した資料を閲覧できます
-        </h3>
-      </div>
+      <p>コンシューマー系のゲーム会社への<br>就職を目指す人が集まったチームです</p>
+      <p>DirectX 9を使って一から3Dゲームを制作する活動をしています</p>
+      <a href="/DX9-Team/about-us/" class="link_1">
+        メンバー紹介へ&nbsp;
+        <i class="fas fa-caret-right"></i>
+      </a>
     </div>
 
-    <div class="spilt-bar"></div>
-    
-    <div class="download">
-      <h1>
-        <i class="fas fa-download"></i>
-        ダウンロードしてあそぶ<br class="br">（保護者の方へ）
-      </h1>
-      <div class="desc">
-        <ol>
-          <li><a style="color: #F40F02;" href="https://shopipi.app/share/KORO.zip" target="_blank">こちら</a>をクリックしてダウンロードします</li>
-          <li>ダウンロードされた<span style="color: #F40F02;">ZIPファイル</span>を<a href="https://www.yurikago.net/yurietax/unzip_vista7.html" target="_blank">解凍</a>します</li>
-          <li>解凍後、生成されたフォルダの中の<span style="color: #F40F02;">exeファイル</span>を実行すると遊ぶことができます</li>
-        </ol>
-        <h3 class="plz">プレイが終わりましたら、ページ下部のアンケートボタンからご回答お願いします</h3>
-        <p>※Windowの環境でのみプレイ可能ですが、Windowsでも特定の環境で<br class="only-pc-view">プレイできないことを確認しています</p>
-        <p>※音量に注意!! 音量10%でのプレイを推奨します</p>
-        <details style="margin-top: 50px;">
-          <summary>
-            <span style="color: #0f6dda;">WindowsによってPCが保護されました</span>という青い画面が出た場合の対処方法
-          </summary>
-          <img src="wd.jpg" class="wd">
-        </details>
-      </div>
+  </div>
+
+  <!-- 「KORO」 -->
+  <div class="large-banner KORO-banner">
+
+    <div class="desc">
+      <h1>「KORO」</h1>
+      <div class="bar"></div>
+      <p>迷路版を傾けボールを転がして<br>ゴールに導く3D玉転がしゲームです</p>
+      <p><a href="https://g.co/kgs/LgRC2v" target="_blank" class="link_2">TAMA</a>というゲームをモチーフにしています</p>
+      <a href="/DX9-Team/KORO" class="link_3">
+        作品紹介へ&nbsp;
+        <i class="fas fa-caret-right"></i>
+      </a>
     </div>
 
-    <!-- ボタン -->
-    <a href="https://forms.gle/4babfqPrdNkc5f9TA" class="google-form-btn" target="_blank">
-      アンケートへ
-      &nbsp;<i class="fas fa-external-link-alt"></i>
-    </a>
-    <!-- <a href="https://ydagame.wixsite.com/presen-ydagame2021" class="back-top-top"> -->
-    <a href="https://ydagame.wixsite.com/ydagame2021-yokoari" class="back-top-top">
-      <i class="fas fa-arrow-left"></i>&nbsp;
-      トップページへ
-    </a>
+    <!-- 画像 -->
+    <div class="image"></div>
 
-    <!-- ページ上部に戻る -->
-    <div class="moveToTop"></div>
+  </div>
 
-    <!-- フッター -->
-    <footer><i class="far fa-copyright"></i>&nbsp;2021 DX9チーム</footer>
+  <!-- ボタン -->
+  <a href="https://ydagame.wixsite.com/presentation2021" class="back-top-top">
+    <i class="fas fa-arrow-left"></i>&nbsp;
+    ゲーム科TOPへ
+  </a>
 
-    <script>
-      ajax_complete();
-    </script>
+  <!-- ページ上部に戻る -->
+  <div class="moveToTop"></div>
 
-  </body>
+  <!-- フッター -->
+  <footer><i class="far fa-copyright"></i>&nbsp;2021 DX9チーム</footer>
+</body>
+
 </html>

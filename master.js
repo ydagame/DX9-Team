@@ -13,3 +13,19 @@ $(window).scroll(function()
         $(this).css('cursor', 'pointer');
       })
 });
+
+$(document).ready(function()
+{
+  let $link = $('.large-banner .desc a');
+
+  $link.on('mouseover', function()
+  {
+    if ($(window).width() > 480)
+    $(this).find('i').css('padding-left', '4px');
+  });
+
+  $link.on('mouseout', function()
+  {
+    $(this).find('i').css('padding-left', '0');
+  });
+});

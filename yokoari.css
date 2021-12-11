@@ -18,7 +18,7 @@
   height: 500px;
   background-size: 500px !important;
   background: url(KORO-Logo-Black.png) no-repeat;
-  margin: 20px auto;
+  margin: 20px auto 100px;
   box-shadow: var(--box-shadow-value);
   border-radius: 50%;
 }
@@ -60,9 +60,9 @@
                0px 1px 0 orange,  0   -1px 0 orange,
               -1px 0   0 orange,  1px  0   0 orange;
 }
-.yokoari .only-mobile-view
+.only-mobile-view
 {
-  display: none;
+  display: none !important;
 }
 
 .download
@@ -83,7 +83,7 @@
 {
   font-size: 24px;
   font-weight: bold;
-  width: 720px;
+  width: 800px;
   margin: 0 auto 70px;
   line-height: 50px;
 }
@@ -129,6 +129,8 @@ details
 summary
 {
   font-size: 19px;
+  border: none;
+  outline: none;
 }
 summary:hover
 {
@@ -152,6 +154,7 @@ summary:hover
     width: 50vw;
     height: 50vw;
     background-size: 50vw !important;
+    margin-bottom: 10vw;
   }
   .shadow
   {
@@ -162,7 +165,7 @@ summary:hover
   .yokoari
   {
     margin: -20px auto 0;
-    width: 90vw;
+    width: 100vw;
   }
   .yokoari h1
   {
@@ -174,11 +177,11 @@ summary:hover
   }
   .only-pc-view
   {
-    display: none;
+    display: none !important;
   }
-  .yokoari .only-mobile-view
+  .only-mobile-view
   {
-    display: block;
+    display: block !important;
   }
 
   .download h1
@@ -201,7 +204,7 @@ summary:hover
   }
   .download .desc p
   {
-    font-size: 3.6vw;
+    font-size: 3.5vw;
     text-align: right;
   }
 

@@ -1,0 +1,131 @@
+.wrapper
+{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.sidebar
+{
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto 0 20px;
+}
+.banner
+{
+  width: 400px;
+  height: 200px;
+  background: #373737;
+  margin-top: 20px;
+  box-shadow: var(--box-shadow-value);
+  border-radius: 20px;
+
+  transition-duration: 0.3s;
+
+  /* -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: pixelated; */
+}
+.banner.zoom
+{
+  background: url('banner-zoom.png') no-repeat;
+  background-size: 400px;
+  background-position: center center;
+}
+.banner.poster
+{
+  background: url('banner-poster.png') no-repeat;
+  background-size: 400px;
+  background-position: center center;
+}
+.banner:hover
+{
+  transform: scale(1.05);
+}
+.nav-pc
+{
+  width: 1200px;
+  height: 50px;
+  background: darkorange;
+  margin: -100px auto 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 10px;
+
+  box-shadow: var(--box-shadow-value);
+}
+.nav-pc .tab
+{
+  width: 200px;
+  font-weight: bold;
+  color: #373737;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  font-size: 18px;
+}
+.nav-pc .tab.current
+{
+  color: #ECF0F2;
+}
+.what-dx9team
+{
+  width: 500px;
+  height: var(--photo-height);
+  text-align: center;
+  display: none;
+}
+.what-dx9team h1
+{
+  color: white;
+}
+nav
+{
+  display: none !important;
+}
+@media screen and (max-width: 480px)
+{
+  .wrapper
+  {
+    flex-direction: column;
+  }
+  .sidebar
+  {
+    width: 90vw;
+    flex-direction: row;
+    margin: 50px auto;
+  }
+  .banner
+  {
+    width: 40vw;
+    height: 40vw;
+    margin: 0 auto;
+    background-size: 40vw !important;
+  }
+  .banner-split
+  {
+    width: 10vw;
+  }
+  .banner:hover
+  {
+    transform: scale(1);
+    cursor: default;
+  }
+  .banner.zoom
+  {
+    background: url(banner-zoom-mobile.png);
+  }
+  .banner.poster
+  {
+    background: url(banner-poster-mobile.png);
+  }
+  .nav-pc
+  {
+    display: none;
+  }
+}
