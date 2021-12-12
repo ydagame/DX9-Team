@@ -52,6 +52,27 @@
     <!-- アイコン -->
     <div class="logo big"></div>
 
+    <div class="notice">
+      <p>※このページは前期のページです、古い情報が表示されている場合があります</p>
+    </div>
+
+    <style>
+      .notice
+      {
+        margin: 0 auto; 
+        width: 900px; 
+        font-size: 16px;
+        color: gray;
+      }
+      @media screen and (max-width: 480px)
+      {
+        .notice
+        {
+          width: 90vw;
+        }
+      }
+    </style>
+
     <!-- ナビゲーション -->
     <!-- <div class="nav"></div> -->
     <style>
@@ -255,6 +276,10 @@
         </h3>
       </div>
     </div>
+
+    <button style="width: 120px; margin: 0 auto 40px;" onclick="window.close()">
+      ✖ 閉じる
+    </button>
 
     <!-- ボタン -->
     <!-- <a href="https://forms.gle/q4wrzqWd3rnNLDFu7" class="google-form-btn" target="_blank">
