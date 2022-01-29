@@ -29,7 +29,7 @@
 }
 .banner.zoom
 {
-  background: url('banner-zoom.png') no-repeat;
+  background: url('banner-zoom-award.png') no-repeat;
   background-size: 400px;
   background-position: center center;
 }
@@ -118,7 +118,7 @@ nav
   }
   .banner.zoom
   {
-    background: url(banner-zoom-mobile.png);
+    background: url(banner-zoom-award-mobile.png);
   }
   .banner.poster
   {
